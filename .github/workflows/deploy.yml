@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Assemble website
         run: |
-          cat site-part-* > /tmp/hasoul-site.zip
+          cat portfolio-pack-* > /tmp/hasoul-site.zip
           mkdir _site
           unzip -q /tmp/hasoul-site.zip -d _site
       - uses: actions/configure-pages@v5
