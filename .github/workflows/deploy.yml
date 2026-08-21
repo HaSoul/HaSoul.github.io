@@ -27,6 +27,7 @@ jobs:
           cat portfolio-pack-* > /tmp/hasoul-site.zip
           mkdir _site
           unzip -q /tmp/hasoul-site.zip -d _site
+          unzip -qo hasoul-mobile-overlay.zip -d _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
